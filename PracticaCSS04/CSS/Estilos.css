@@ -1,0 +1,214 @@
+body{
+    /* 1em */
+    font-size: 16px;
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
+/*Header*/
+header{
+    background: #235e92;
+}
+#logo{
+    width: 15%;
+    margin-left: 415px;
+}
+/*Div*/
+#div{
+    background: #235e92;
+    margin: 0px auto;
+}
+#div nav ul li img{
+    width: 60%;
+}
+#div nav ul li{
+    display: inline-block;
+    margin-left: -20px;
+}
+#div nav ul{
+    text-align: right;
+}
+#div nav {
+    margin: 0px auto;
+    background: #efefef;
+    border-radius: 5px;
+    padding-bottom: 1px;
+    margin-top: -16px;
+    width: 99%;
+}
+/*Aside*/
+#aside{
+    position: relative;
+    left: 5px;
+    top: -4px;
+    display: inline-block;
+    background: #efefef;
+    width: 28%;
+}
+#links{
+    background: #1e4873;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 15px
+}
+#links article{
+    background: #235e92;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#links ul{
+    margin-top:     2px;
+    margin-bottom: -1px;
+    margin-left: -25px;
+    color: white;
+}
+#links ul li{
+    padding-bottom: 10px;
+    list-style: none;
+}
+#logoLinks{
+    width: 25px;
+    vertical-align: middle;
+}
+#progress{
+    width: 90%;
+    margin: 0px auto;
+    background: white;
+    margin-bottom: 15px;
+}
+#progress article{
+    background: #235e92;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#progress span{
+    margin-left: 5px;
+}
+#logoProgress{
+    width: 25px;
+    vertical-align: middle;
+}
+/*Section*/
+#section{
+    position: relative;
+    left: -5px;
+    top: -4px;
+    background: white;
+    border-radius: 5px;
+    float: right;
+    width: 71%;
+}
+#textCubo{
+    margin-left: 10px;
+}
+#artCubos{
+    margin-top: 20px;
+    width: 99%;
+    padding-bottom: 6px;
+}
+#artCubos article{
+    display: inline-block;
+    border-radius: 5px;
+    width: 22%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+#artCubo01{
+    background: #19a820;
+    margin-left: 9px;
+    margin-right: 5px;
+}
+#artCubo02{
+    background: #1b6da9;
+    margin-right: 5px;
+}
+#artCubo03{
+    background: #7f1aa7;
+    margin-right: 5px;
+}
+#artCubo04{
+    background: #a71a19;
+    margin-right: 5px;
+}
+#cubo01{
+    width: 70px;
+}
+#cubo02{
+    width: 63px;
+}
+#cubo03{
+    width: 64px;
+}
+#cubo04{
+    width: 66px;
+}
+#artPanels{
+    margin-top: 20px;
+}
+#textPanel{
+    margin-left: 13px;
+}
+#panel{
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+#artUsuarios{
+    margin-top: 20px;
+    margin-bottom: 11px;
+}
+#textUsuario{
+    margin-left: 18px;
+}
+#artUsuarios article{
+    background: #4a6bae;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    width: 23%;
+}
+#artUsu01{
+    margin-left: 18px;
+}
+#usu01{
+    margin-top: 5px;
+    width: 124px;
+}
+#usu02{
+    margin-top: 5px;
+    width: 115px;
+}
+#usu03{
+    margin-top: 5px;
+    width: 115px;
+}
+#usu04{
+    margin-top: 5px;
+    width: 116px;
+}
+input[type="submit"]{
+    margin-top: 15px;
+    color: white;
+    background: #59c1df;
+    border: 1px solid #59c1df ;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+/*Clases*/
+.colorblanco{
+    color: white;
+}
+.colorgris{
+    color: #6C6C6C;
+}
+.barra{
+    width: 99%;
+}
+.letragrande{
+    font-size: 1.3em;
+}
+.pos{
+    margin-top: 15px;
+}
