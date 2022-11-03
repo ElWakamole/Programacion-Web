@@ -10,3 +10,9 @@ function quitarSITEC(){
         chi.innerHTML = "Shiiiiaaaale GG EZ";
     }
 }
+async function traePersona(){
+    const respuesta = await fetch("https://randomuser.me/api/");
+    //console.log(respuesta);
+    const datos = await respuesta.json();
+    console.log(datos.results[0].name.last+" "+datos.results[0].name.first);
+}
