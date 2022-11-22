@@ -2,6 +2,10 @@ let express = require('express');
 let mysql = require('mysql');
 let app = express();
 let puerto = 3000;
+//Que el cliente Frontend pueda usar la API
+let cors = require('cors');
+//Recivir datos Json
+app.use(express.json());
 
 app.listen(puerto, function(){
     console.log("Servidor En Linea");
@@ -56,6 +60,32 @@ app.post('/API/Articulos',function(req,res){
                 cantidad: req.body.cantidad};
     let sql='insert into Articulos set ?';
     conexion.query(sql,data,function(error,results){
+        if(error){
+            throw error;
+        }else{
+            res.send(results);
+        }
+    });
+});
+//Actualizar un articulo
+app.put('/API/Articulos/:id',function(req,res){
+    let id = req.params.id;
+    let descripcion = req.body.descripcion;
+    let precio = req.body.precio;
+    let cantidad = req.body.cantidad;
+    let sql = "update Articulos set descripcion = ?, precio = ?, cantidad = ? where id = ?";
+    conexion.query(sql,[descripcion,precio,cantidad,id],function(error,results){
+        if(error){
+            throw error;
+        }else{
+            res.send(results);
+        }
+    });
+});
+//Ruta para eliminar un articulo
+app.delete('/API/Articulos/:id',function(req,res){
+    let id = req.params.id;
+    conexion.query('delete from Articulos where id = ?',[id],function(error,results){
         if(error){
             throw error;
         }else{
